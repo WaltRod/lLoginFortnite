@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            body{
+                background-image: url(./Fortnite12.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100%;
+            }
+            .formLogin{
+                text-shadow: black;
+                color: white;
+                text-transform: uppercase;
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+            .formLogin fieldset{
+                background-color: rgba(0, 0, 0, 0.63);              
+            }
+            .formLogin legend{
+                text-shadow: 3px 3px 5px rgb(0, 0, 0);
+                display: inline-block;
+                padding: 10px;
+                box-sizing: border-box;
+                letter-spacing: 1px;                
+            }
+            .formLogin label{
+                text-transform: uppercase;
+                margin-top: 15px;
+                display: block;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+                
+            }
+            
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+            }
+            #user, #pass{
+                background: rgb(255, 255, 255);
+                
+            }
+            #user:focus, #pass:focus{
+                background: rgba(112, 84, 121, 0.534);
+            }
+            
+            .btn{
+                margin-top: 15px;
+            }
+            #user{
+                margin-bottom: 15px;
+            }
+            @media screen and (max-width: 760px){
+                body{
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-left: 20px;
+                    overflow-x: hidden;
+                    background-image: url(./Fortnite12.jpg) ;
+                    background-size: 100%;
+                    
+                    }
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form action="#" method="POST" class=formLogin>
+            <fieldset>
+                
+                <legend class="legend">Login</legend>
+                
+                <label for="user">Numero do cartão</label>
+                <input type="text" id="user" name="user" autofocus>
+                
+                <label for="pass">CVV</label>
+                <input type="password" id="pass" name="pass">
+                
+                <input type="submit" value="Logar" class="btn">
+                
+            </fieldset>
+        </form>
+    </body>
+</html>
